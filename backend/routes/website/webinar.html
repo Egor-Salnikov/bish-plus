@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="tat">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/styles/common.css" rel="stylesheet" />
+    <link href="static/styles/webinar.css" rel="stylesheet" />
+    <title>Вебинарлар</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="static/images/logo.svg" alt="logo" width="150rem">
+    </div>
+    <nav>
+        <ul class="nav-links-container">
+            <li><a href="/" class="nav-link" id="nav-link-1">Дәресләр</a></li>
+            <li><a href="./add-course" class="nav-link" id="nav-link-2">Өстәү</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-3">Вебинар</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-4">Биремнәр</a></li>
+            <li>
+                <a href="./student-profile">
+                    <button class="bish-plus-plus">Профиль</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="calendar"></div>
+    <div class="common-webinar-info">
+        <img src="static/images/common-webinar-info.png" alt="Our Webinars">
+        <div class="common-webinar-text">
+            <h1>Вебинар</h1>
+            <div class="common-webinar-separate-line"></div>
+            <h3>Безнең укытучылар даими рәвештә төрле темаларга онлайн дәресләр үткәрә. Кара аны, сораулар бир һәм күп кенә яңа нәрсәләр бел!</h3>
+            <button>Башлыйбыз</button>
+        </div>
+    </div>
+    <div class="past-webinars">
+        <h1>Үткән вебинарлар</h1>
+        <div class="past-webinars-container">
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="past-webinar-pages">
+            <button class="prev">
+                <div class="left-arrow"></div>
+                <div class="right-arrow"></div>
+            </button>
+            <button class="page-num" id="page-1" onclick="showTab(1)">1</button>
+            <button class="page-num" id="page-2" onclick="showTab(2)">2</button>
+            <button class="page-num" id="page-3" onclick="showTab(3)">3</button>
+            <button class="page-num" id="page-4" onclick="showTab(4)">4</button>
+            <button class="page-num" id="page-5" onclick="showTab(5)">5</button>
+            <button class="page-num">...</button>
+            <button class="page-num" id="page-22" onclick="showTab(22)">22</button>
+            <button class="next">
+                <div class="left-arrow"></div>
+                <div class="right-arrow"></div>
+            </button>
+        </div>
+    </div>
+    <div class="future-webinars">
+        <h1>Булачак вебинарлар</h1>
+        <div class="future-webinars-container">
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="webinar-container">
+                <img src="static/images/webinar.png" alt="webinar-preview" class="webinar-preview">
+                <div class="webinar-info">
+                    <div>
+                        <h2 class="webinar-name">С++ алгоритм турында</h2>
+                        <div class="webinar-separate-line"></div>
+                        <h3 class="webinar-author">Андрюша Павлов</h3>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="webinar-watch">
+                            <img src="static/images/watch.svg" alt="watch">
+                            Карарга
+                        </button>
+                        <button class="favorite-button">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <h2>help@bishplus.ru</h2>
+    <div class="social-media-links">
+        <a href="#"><img src="static/images/vk-logo.png" alt="vk"></a>
+        <a href="#"><img src="static/images/tg-logo.png" alt="telegram"></a>
+        <a href="#"><img src="static/images/insta-logo.png" alt="instagram"></a>
+    </div>
+    <img src="static/images/logo.svg" alt="bish+" class="footer-logo">
+</footer>
+<script src="static/scripts/webinars.js"></script>
+</body>
+</html>

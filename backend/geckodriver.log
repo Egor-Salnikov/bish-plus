@@ -1,0 +1,68 @@
+1694299811046	geckodriver	INFO	Listening on 127.0.0.1:52487
+1694299811301	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/w1/rg3jwhtd54gb1w0tvf6h9bx80000gn/T/rust_mozprofilepO4rRP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694299814096	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694299814217	Marionette	INFO	Listening on port 53053
+WebDriver BiDi listening on ws://127.0.0.1:52488
+Read port: 53053
+1694299814536	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:52488/devtools/browser/90c93346-6eaa-40f8-a7f2-153e789719b3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+console.error: ({})
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1694301954324	geckodriver	INFO	Listening on 127.0.0.1:58358
+1694301954844	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/w1/rg3jwhtd54gb1w0tvf6h9bx80000gn/T/rust_mozprofile3CInow"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694301955184	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694301955296	Marionette	INFO	Listening on port 58364
+WebDriver BiDi listening on ws://127.0.0.1:58359
+Read port: 58364
+1694301955433	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:58359/devtools/browser/00de088d-d112-40b6-895e-b461e7858f8b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+console.error: ({})
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1694306179748	geckodriver	INFO	Listening on 127.0.0.1:50727
+1694306180260	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/w1/rg3jwhtd54gb1w0tvf6h9bx80000gn/T/rust_mozprofileOdelnI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694306180611	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694306180719	Marionette	INFO	Listening on port 50735
+WebDriver BiDi listening on ws://127.0.0.1:50728
+Read port: 50735
+1694306180860	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50728/devtools/browser/e3bec247-df03-487e-b5aa-310871b5c9aa
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+1694306183510	Marionette	INFO	Stopped listening on port 50735
+1694306192510	geckodriver	INFO	Listening on 127.0.0.1:50781
+1694306193031	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/Use ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/w1/rg3jwhtd54gb1w0tvf6h9bx80000gn/T/rust_mozprofileUna1c1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694306193321	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694306193417	Marionette	INFO	Listening on port 50788
+WebDriver BiDi listening on ws://127.0.0.1:50782
+Read port: 50788
+1694306193532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:50782/devtools/browser/0ff6193a-09be-4919-bd79-4a1e9876bba1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://edu.tatar.ru."
+1694306196237	Marionette	INFO	Stopped listening on port 50788

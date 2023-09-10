@@ -1,0 +1,130 @@
+main {
+
+    flex-direction: row;
+}
+.course {
+    display: block;
+    background: #F0F6FE;
+    border-radius: 20px;
+    width: 100%;
+}
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 14rem);
+    border-bottom: 1px solid rgba(124, 82, 199, 30%);
+    padding: 4rem 7rem 2rem 7rem;
+}
+.course-header-left {
+    display: flex;
+    width: 30%;
+}
+.course-header-left img {
+    width: 9rem;
+    height: 9rem;
+    margin-right: 4rem;
+}
+.course-info h2 {
+    font-size: 2.5rem;
+}
+.course-info p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: #A7A7A7;
+}
+.course-header-right {
+    width: 20%;
+}
+.course-right-header {
+    display: flex;
+    color: var(--tertiary-color);
+    height: 4rem;
+    justify-content: right;
+    font-size: 1.2rem;
+}
+.course-header-num {
+    padding-right: 3rem;
+    border-right: 2px solid var(--tertiary-color);
+    display: flex;
+    align-items: center;
+}
+.course-header-author {
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+}
+.continue {
+    border-radius: 5px;
+    padding: 1rem 2rem 1rem 2rem;
+    color: var(--back-primary-color);
+    background: var(--orange-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    margin-top: 3rem;
+    margin-left: auto;
+    align-items: center;
+}
+.continue img {
+    margin-right: 1rem;
+}
+.course-body {
+    height: fit-content;
+    padding: 4rem 7rem;
+    display: flex;
+}
+.modules-logo {
+    width: 3rem;
+    height: 3rem;
+}
+.course-container {
+    margin-left: 2rem;
+    color: var(--tertiary-color);
+}
+.course-tab {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+    font-weight: 600;
+}
+.course-tab:first-child {
+    padding-top: 0.5rem;
+}
+.course-tab.active {
+    font-weight: 700;
+}
+.tab-container {
+    display: grid;
+    margin-left: 6rem;
+    padding-left: 2rem;
+    border-left: 2px solid var(--tertiary-color);
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.tab-container.active {
+    margin-top: 1.5rem;
+    height: 18rem;
+    margin-bottom: 1.5rem;
+}
+.tab-container a {
+    color: var(--tertiary-color);
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.tab-container a:first-child {
+    margin-top: 0;
+}
+.common-course-picture {
+    width: 40rem;
+    height: fit-content;
+    /*margin: auto 0 auto auto;*/
+    margin-left: auto;
+    margin-right: 5rem;
+}

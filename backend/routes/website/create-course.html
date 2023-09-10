@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tat">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/styles/common.css" rel="stylesheet" />
+    <link href="static/styles/create-course.css" rel="stylesheet" />
+    <title>Курс булдырырга</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="static/images/logo-2.svg" alt="logo" width="150rem">
+    </div>
+    <nav>
+        <ul class="nav-links-container">
+            <li><a href="/" class="nav-link" id="nav-link-1">Дәресләр</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-2">Өстәү</a></li>
+            <li><a href="./webinar" class="nav-link" id="nav-link-3">Вебинар</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-4">Биремнәр</a></li>
+            <li>
+                <a href="./student-profile">
+                    <button class="bish-plus-plus">Профиль</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="create-course">
+        <div class="create-course-left">
+            <div class="create-course-info">
+                <img src="static/images/cpp.png" alt="Course logo">
+                <h1>Алгоритмлар турында курс</h1>
+            </div>
+            <div class="create-course-navigation">
+                <div class="create-course-nav" id="create-course-nav-1" onclick="showCourseInfo(1)">
+                    <img src="static/images/course-info-tab.svg" alt="Course Info">
+                    <h2>Курс турында</h2>
+                </div>
+                <div class="create-course-nav" id="create-course-nav-2" onclick="showCourseInfo(2)">
+                    <img src="static/images/module-tab.svg" alt="Modules">
+                    <h2>Модульлар</h2>
+                </div>
+                <div class="create-course-nav" id="create-course-nav-3" onclick="showCourseInfo(3)">
+                    <img src="static/images/lessons-tab.svg" alt="Lessons">
+                    <h2>Дәресләр</h2>
+                </div>
+                <div class="create-course-nav" id="create-course-nav-4" onclick="showCourseInfo(4)">
+                    <img src="static/images/exercises-tab.svg" alt="Quizzes">
+                    <h2>Биремнәр</h2>
+                </div>
+            </div>
+        </div>
+        <div class="create-course-right">
+            <div id="course-info-1" class="course-info">
+                <div class="course-header">
+                    <img src="static/images/course-info-tab.svg" alt="Course info">
+                    <h1>Курс турында</h1>
+                </div>
+                <div class="course-main">
+                    <div class="constructor-container info-container">
+                        <h2>Курс исеме</h2>
+                        <input type="text" id="course-name-input">
+                        <h2>Курс тасвирлау</h2>
+                        <textarea type="text" id="course-description-input"></textarea>
+                        <h2>Курс рәсеме</h2>
+                        <label for="add-course-picture" class="add-course-picture" class="upload-course-picture-label">
+                            <img src="static/images/upload-course-picture.svg" alt="Upload picture" class="upload-course-picture">
+                            <h2>Файлны күчерегез яки сайлар өчен монда басыгыз</h2>
+                            <input type="file" id="add-course-picture" class="course-picture-input" accept="image/*">
+                        </label>
+                    </div>
+                </div>
+                <div class="button-block first-button-block">
+                    <button class="continue" onclick="showCourseInfo(2)">
+                        Дәвам
+                        <span class="continue-arrow">
+                        <span class="first-arrow-stick"></span>
+                        <span class="second-arrow-stick"></span>
+                    </span>
+                    </button>
+                </div>
+            </div>
+            <div id="course-info-2" class="course-info">
+                <div class="course-header">
+                    <img src="static/images/module-tab.svg" alt="Course info">
+                    <h1>Модульлар</h1>
+                </div>
+                <div class="course-main">
+                    <div class="modules-navigation">
+                        <button class="nav-tab module-nav-tab" onclick="showModule(1)">1</button>
+                    </div>
+                    <div class="constructor-container module-container">
+                        <h2>Модуль исеме</h2>
+                        <input type="text" id="module-name-input-1">
+                        <h2>Модуль тасвирлау</h2>
+                        <textarea type="text" id="module-description-input-1"></textarea>
+                        <h2>Модуль рәсеме</h2>
+                        <label for="add-course-picture" class="add-course-picture">
+                            <img src="static/images/upload-course-picture.svg" alt="Upload picture" class="upload-module-picture">
+                            <h2>Файлны күчерегез яки сайлар өчен монда басыгыз</h2>
+                            <input type="file" id="module-picture-1" class="course-picture-input" accept="image/*">
+                        </label>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button class="new-module" onclick="showModule(0)">
+                        Яна модуль +
+                    </span>
+                    </button>
+                    <button class="continue" onclick="showCourseInfo(3)">
+                        Дәвам
+                        <span class="continue-arrow">
+                        <span class="first-arrow-stick"></span>
+                        <span class="second-arrow-stick"></span>
+                    </span>
+                    </button>
+                </div>
+            </div>
+            <div id="course-info-3" class="course-info">
+                <div class="course-header">
+                    <img src="static/images/lessons-tab.svg" alt="Course info">
+                    <h1>Дәресләр</h1>
+                </div>
+                <div class="course-main">
+                    <div class="modules-navigation">
+                        <button class="nav-tab lesson-nav-tab" id="lesson-nav-tab-1" onclick="showLesson(1)">1</button>
+                    </div>
+                    <div class="constructor-container lesson-container">
+                        <div class="lesson-row-1">
+                            <div class="choose-module-name">
+                                <h2>Модуль исеме</h2>
+                                <select class="choose-module-name-select">
+                                    <option value="option1">Модуль 1</option>
+                                    <option value="option2">Модуль 2</option>
+                                    <option value="option3">Модуль 3</option>
+                                </select>
+                            </div>
+                            <div class="choose-lesson-difficulty">
+                                <h2>Сложность</h2>
+                                <div class="difficulty-stick"></div>
+                                <div class="difficulty-scale">
+                                    <button class="difficulty" onclick="chooseDifficulty(0, 0)">1</button>
+                                    <button class="difficulty" onclick="chooseDifficulty(0, 1)">2</button>
+                                    <button class="difficulty" onclick="chooseDifficulty(0, 2)">3</button>
+                                    <button class="difficulty" onclick="chooseDifficulty(0, 3)">4</button>
+                                    <button class="difficulty" onclick="chooseDifficulty(0, 4)">5</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lesson-row-2">
+                            <div class="lesson-name">
+                                <h2>Дәрес исеме</h2>
+                                <input type="text" class="lesson-name-input">
+                            </div>
+                            <div class="lesson-time">
+                                <h2>Длительность (в мин)</h2>
+                                <input type="text" class="lesson-time-input">
+                            </div>
+                        </div>
+                        <div class="lesson-row-3">
+                            <div class="lesson-description">
+                                <h2>Дәрес исеме</h2>
+                                <textarea class="lesson-description-textarea"></textarea>
+                            </div>
+                            <div class="lesson-video">
+                                <h2>Видео</h2>
+                                <label for="add-course-picture" class="add-lesson-video">
+                                    <img src="static/images/video-upload.svg" alt="Upload picture" class="upload-lesson-video">
+                                    <h2>Файлны күчерегез яки сайлар өчен монда басыгыз</h2>
+                                    <input type="file" class="add-lesson-video" accept="video/*">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="lesson-row-4">
+                            <h2>Текст</h2>
+                            <textarea class="lesson-text"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button class="new-module" onclick="showLesson(0)">
+                        Яна дәрес +
+                        </span>
+                    </button>
+                    <button class="continue" onclick="showCourseInfo(4)">
+                        Дәвам
+                        <span class="continue-arrow">
+                        <span class="first-arrow-stick"></span>
+                        <span class="second-arrow-stick"></span>
+                    </span>
+                    </button>
+                </div>
+            </div>
+            <div id="course-info-4" class="course-info">
+                <div class="course-header">
+                    <img src="static/images/exercises-tab.svg" alt="Course info">
+                    <h1>Биремнәр</h1>
+                </div>
+                <div class="course-main">
+                    <div class="modules-navigation">
+                        <button class="nav-tab quiz-nav-tab" onclick="showQuiz(1)">1</button>
+                    </div>
+                    <div class="constructor-container quiz-container">
+                        <h2>Бирем тип</h2>
+                        <select id="choose-quiz-type">
+                            <option value="option1">Ачык сорау</option>
+                            <option value="option2">Ачык сорау</option>
+                            <option value="option3">Ачык сорау</option>
+                        </select>
+                        <h2>Сорау</h2>
+                        <textarea id="quiz-question-input-1"></textarea>
+                        <h2>Дөрес җавап рәсеме</h2>
+                        <textarea id="quiz-answer-input-1"></textarea>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button class="new-module" onclick="showQuiz(0)">
+                        Яна бирем +
+                        </span>
+                    </button>
+                    <button class="continue">
+                        Дәвам
+                        <span class="continue-arrow">
+                        <span class="first-arrow-stick"></span>
+                        <span class="second-arrow-stick"></span>
+                    </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="static/images/create-course.png" alt="Create course" class="right-side-image">
+</main>
+<footer>
+    <h2>help@bishplus.ru</h2>
+    <div class="social-media-links">
+        <a href="#"><img src="static/images/vk-logo-2.svg" alt="vk"></a>
+        <a href="#"><img src="static/images/tg-logo-2.svg" alt="telegram"></a>
+        <a href="#"><img src="static/images/insta-logo-2.svg" alt="instagram"></a>
+    </div>
+    <img src="static/images/logo-2.svg" alt="bish+" class="footer-logo">
+</footer>
+<script src="static/scripts/create-course.js"></script>
+</body>
+</html>

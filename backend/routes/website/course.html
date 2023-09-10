@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tat">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/styles/common.css" rel="stylesheet" />
+    <link href="static/styles/course.css" rel="stylesheet" />
+    <title>Курс</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="static/images/logo.svg" alt="logo" width="150rem">
+    </div>
+    <nav>
+        <ul class="nav-links-container">
+            <li><a href="#" class="nav-link" id="nav-link-1">Дәресләр</a></li>
+            <li><a href="./add-course" class="nav-link" id="nav-link-2">Өстәү</a></li>
+            <li><a href="./webinar" class="nav-link" id="nav-link-3">Вебинар</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-4">Биремнәр</a></li>
+            <li>
+                <a href="./student-profile">
+                    <button class="bish-plus-plus">Профиль</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="course">
+        <div class="course-header">
+            <div class="course-header-left">
+                <img src="./static/images/python.png" alt="Course Logo">
+                <div class="course-info">
+                    <h2>Python</h2>
+                    <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр.</p>
+                </div>
+            </div>
+            <div class="course-header-right">
+                <div class="course-right-header">
+                    <div class="course-header-num">
+                        <h3>12 дәрес</h3>
+                    </div>
+                    <div class="course-header-author">
+                        <h3>Руслан Сабиров</h3>
+                    </div>
+                </div>
+                <button class="continue">
+                    <img src="./static/images/course-continue.svg" alt="Continue">
+                    Башлыйбыз
+                </button>
+            </div>
+        </div>
+        <div class="course-body">
+            <img src="./static/images/module-2.svg" alt="Modules" class="modules-logo">
+            <div class="course-container">
+                <h1 class="course-tab" onclick="showTabContainer(1)">1. Введение в Python</h1>
+                <div class="tab-container">
+                    <a href="#">1.1  Переменные и типы данных</a>
+                    <a href="#">1.2  Консольный ввод и вывод</a>
+                    <a href="#">1.3 Арифметические операции с числами</a>
+                    <a href="#">1.4 Поразрядные операции с числами</a>
+                    <a href="#">1.5 Условные выражения</a>
+                </div>
+                <h1 class="course-tab" onclick="showTabContainer(2)">2. Основы Python</h1>
+                <div class="tab-container">
+                    <a href="#">1.1  Переменные и типы данных</a>
+                    <a href="#">1.2  Консольный ввод и вывод</a>
+                    <a href="#">1.3 Арифметические операции с числами</a>
+                    <a href="#">1.4 Поразрядные операции с числами</a>
+                    <a href="#">1.5 Условные выражения</a>
+                </div>
+                <h1 class="course-tab" onclick="showTabContainer(3)">3. Объектно-ориентированное программирование</h1>
+                <div class="tab-container">
+                    <a href="#">1.1  Переменные и типы данных</a>
+                    <a href="#">1.2  Консольный ввод и вывод</a>
+                    <a href="#">1.3 Арифметические операции с числами</a>
+                    <a href="#">1.4 Поразрядные операции с числами</a>
+                    <a href="#">1.5 Условные выражения</a>
+                </div>
+                <h1 class="course-tab" onclick="showTabContainer(4)">4. Обработка ошибок и исключений</h1>
+                <div class="tab-container">
+                    <a href="#">1.1  Переменные и типы данных</a>
+                    <a href="#">1.2  Консольный ввод и вывод</a>
+                    <a href="#">1.3 Арифметические операции с числами</a>
+                    <a href="#">1.4 Поразрядные операции с числами</a>
+                    <a href="#">1.5 Условные выражения</a>
+                </div>
+                <h1 class="course-tab" onclick="showTabContainer(5)">5. Списки, кортежи и словари</h1>
+                <div class="tab-container">
+                    <a href="#">1.1  Переменные и типы данных</a>
+                    <a href="#">1.2  Консольный ввод и вывод</a>
+                    <a href="#">1.3 Арифметические операции с числами</a>
+                    <a href="#">1.4 Поразрядные операции с числами</a>
+                    <a href="#">1.5 Условные выражения</a>
+                </div>
+            </div>
+            <img src="./static/images/common-webinar-info.png" alt="Course" class="common-course-picture">
+        </div>
+    </div>
+</main>
+<footer>
+    <h2>help@bishplus.ru</h2>
+    <div class="social-media-links">
+        <a href="#"><img src="static/images/vk-logo.png" alt="vk"></a>
+        <a href="#"><img src="static/images/tg-logo.png" alt="telegram"></a>
+        <a href="#"><img src="static/images/insta-logo.png" alt="instagram"></a>
+    </div>
+    <img src="static/images/logo.svg" alt="bish+" class="footer-logo">
+</footer>
+<script src="static/scripts/course.js"></script>
+</body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="tat">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/styles/common.css" rel="stylesheet" />
+    <link href="static/styles/main.css" rel="stylesheet" />
+    <title>Дәресләр</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.svg" alt="logo" width="150rem">
+        </div>
+        <nav>
+            <input type="checkbox" class="burger-trigger">
+            <div class="hamburger-lines">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <ul class="nav-links-container">
+                <li><a href="#" class="nav-link" id="nav-link-1">Дәресләр</a></li>
+                <li><a href="./add-course" class="nav-link" id="nav-link-2">Өстәү</a></li>
+                <li><a href="./webinar" class="nav-link" id="nav-link-3">Вебинар</a></li>
+                <li><a href="#" class="nav-link" id="nav-link-4">Биремнәр</a></li>
+                <li>
+                    <a href="./student-profile" class="nav-link">
+                        <button class="bish-plus-plus">Профиль</button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="landing container">
+            <div class="main-landing">
+                <div class="main-landing-text">
+                    <h1>Без белем алырга ярдәм итәбез</h1>
+                    <div class="landing-separate-line"></div>
+                    <h2>Дәресләрне өйрәнегез һәм үзегез төзегез!</h2>
+                    <div class="button-block">
+                        <a href="#courses-heading" class="continue-link">
+                            <button class="landing-first-button" >Башлыйбыз</button>
+                        </a>
+                        <a href="#about-us" class="question-link">
+                            <button class="landing-second-button">Безнең турында</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="main-landing-photo">
+                    <img src="static/images/landing.png" alt="landing-photo">
+                </div>
+            </div>
+            <div class="landing-features-container">
+                <div class="landing-features-pair">
+                    <div class="landing-feature">
+                        <div class="landing-feature-icon">
+                            <img src="static/images/diversity-feature-icon.png" alt="feature icon">
+                        </div>
+                        <h1>Төрлелек</h1>
+                        <p>Безнең платформада төрле юнәлешләр буенча дәресләр бирелгән</p>
+                    </div>
+                        <div class="landing-feature">
+                        <div class="landing-feature-icon">
+                            <img src="static/images/webinar-feature-icon.png" alt="feature icon">
+                        </div>
+                        <h1>Вебинарлар</h1>
+                        <p>Укытучылардан вебинарларны карагыз</p>
+                    </div>
+                </div>
+                <div class="landing-features-pair">
+                    <div class="landing-feature">
+                        <div class="landing-feature-icon">
+                            <img src="static/images/progress-feature-icon.png" alt="feature icon">
+                        </div>
+                        <h1>Үсеш</h1>
+                        <p>Укыгыз, белем һәм казанышлар алыгыз</p>
+                    </div>
+                        <div class="landing-feature">
+                        <div class="landing-feature-icon">
+                            <img src="static/images/check-feature-icon.png" alt="feature icon">
+                        </div>
+                        <h1>Тикшерү</h1>
+                        <p>Без дәресләрне тикшерәбез, сезгә иң яхшысы гына булсын өчен.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="courses">
+            <h1 class="courses-heading" id="courses-heading">Дәресләр</h1>
+            <form class="course-search" id="course-search-form">
+                <label class="course-name-input" for="course-search-input">
+                    <img src="static/images/search-icon.png" alt="search-icon">
+                    <input type="text" placeholder="Без дәресләрне тикшерәбез, сезгә иң яхшысы гына булсын өчен." id="course-search-input">
+                </label>
+                <label class="course-search-filter" for="course-search-first-filter">
+                    <input type="checkbox" id="course-search-first-filter">
+                    <p>Тикшерелгән</p>
+                </label>
+                <label class="course-search-filter" for="course-search-second-filter">
+                    <input type="checkbox" id="course-search-second-filter">
+                    <p> </p>
+                </label>
+                <button class="course-search-button">Эзләргә</button>
+            </form>
+            <div class="popular-courses-list">
+                <div class="courses-types">
+                    <div class="course-type" id="course-tab-1" onclick="showTab(1)">
+                        <h1>Танылган дәресләр</h1>
+                    </div>
+                    <div class="course-type" id="course-tab-2" onclick="showTab(2)">
+                        <h1>IT</h1>
+                    </div>
+                    <div class="course-type" id="course-tab-3" onclick="showTab(3)">
+                        <h1>Телләрне өйрәнү</h1>
+                    </div>
+                    <div class="course-type" id="course-tab-4" onclick="showTab(4)">
+                        <h1>ОГЭ/ЕГЭ</h1>
+                    </div>
+                    <div class="course-type" id="course-tab-5" onclick="showTab(5)">
+                        <h1>Табигый фәннәр</h1>
+                    </div>
+                </div>
+                <div class="courses-list" id="courses-list-1">
+                    <div class="course-container">
+                        <div class="course-description">
+                            <h2>Python</h2>
+                            <div class="course-separate-line"></div>
+                            <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                            <div class="course-lessons-num">
+                                <h3>12 дәрес</h3>
+                            </div>
+                        </div>
+                        <div class="course-right">
+                            <img src="static/images/python.png" alt="course-logo" class="course-preview-logo">
+                            <button class="add-favorite-course">
+                                <img src="static/images/favorite.png" alt="add-to-favorite">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course-container">
+                        <div class="course-description">
+                            <h2>Python</h2>
+                            <div class="course-separate-line"></div>
+                            <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                            <div class="course-lessons-num">
+                                <h3>12 дәрес</h3>
+                            </div>
+                        </div>
+                        <div class="course-right">
+                            <img src="static/images/python.png" alt="course-logo" class="course-preview-logo">
+                            <button class="add-favorite-course">
+                                <img src="static/images/favorite.png" alt="add-to-favorite">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course-container">
+                        <div class="course-description">
+                            <h2>Python</h2>
+                            <div class="course-separate-line"></div>
+                            <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                            <div class="course-lessons-num">
+                                <h3>12 дәрес</h3>
+                            </div>
+                        </div>
+                        <div class="course-right">
+                            <img src="static/images/python.png" alt="course-logo" class="course-preview-logo">
+                            <button class="add-favorite-course">
+                                <img src="static/images/favorite.png" alt="add-to-favorite">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course-container">
+                        <div class="course-description">
+                            <h2>Python</h2>
+                            <div class="course-separate-line"></div>
+                            <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                            <div class="course-lessons-num">
+                                <h3>12 дәрес</h3>
+                            </div>
+                        </div>
+                        <div class="course-right">
+                            <img src="static/images/python.png" alt="course-logo" class="course-preview-logo">
+                            <button class="add-favorite-course">
+                                <img src="static/images/favorite.png" alt="add-to-favorite">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course-container">
+                        <div class="course-description">
+                            <h2>Python</h2>
+                            <div class="course-separate-line"></div>
+                            <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                            <div class="course-lessons-num">
+                                <h3>12 дәрес</h3>
+                            </div>
+                        </div>
+                        <div class="course-right">
+                            <img src="static/images/python.png" alt="course-logo" class="course-preview-logo">
+                            <button class="add-favorite-course">
+                                <img src="static/images/favorite.png" alt="add-to-favorite">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="course-container">
+                        <div class="course-description">
+                            <h2>Python</h2>
+                            <div class="course-separate-line"></div>
+                            <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                            <div class="course-lessons-num">
+                                <h3>12 дәрес</h3>
+                            </div>
+                        </div>
+                        <div class="course-right">
+                            <img src="static/images/python.png" alt="course-logo" class="course-preview-logo">
+                            <button class="add-favorite-course">
+                                <img src="static/images/favorite.png" alt="add-to-favorite">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-list" id="courses-list-2">
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-list" id="courses-list-3">
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/math-olymp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/math-olymp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/math-olymp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/math-olymp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/math-olymp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/math-olymp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-list" id="courses-list-4">
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                    <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-list" id="courses-list-5">
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+                <div class="course-container">
+                    <div class="course-description">
+                        <h2>Python</h2>
+                        <div class="course-separate-line"></div>
+                        <p>Python да веб-кушымталар һәм нейросетилар ясыйлар, фәнни исәпләүләр үткәрәләр. </p>
+                        <div class="course-lessons-num">
+                            <h3>12 дәрес</h3>
+                        </div>
+                    </div>
+                    <div class="course-right">
+                        <img src="static/images/cpp.png" alt="course-logo" class="course-preview-logo">
+                        <button class="add-favorite-course">
+                            <img src="static/images/favorite.png" alt="add-to-favorite">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us" id="about-us">
+            <div class="question-list">
+                <h1>Безнең турыда</h1>
+                <div class="question-list-separate-line"></div>
+                <div class="question-container" id="question-container-1">
+                    <div class="question-container-header" onclick="showQuestion(1)">
+                        <h2>Татар телендә укытучылар һәм укучылар өчен Биш+ ның төп кыйммәте нәрсәдә?</h2>
+                        <div class="question-container-header-arrow">
+                            <div class="question-container-header-arrow-line-1"></div>
+                            <div class="question-container-header-arrow-line-2"></div>
+                        </div>
+                    </div>
+                    <h2 class="question-container-text">Безнең биш+ платформасының төп кыйммәте - белем бирү материалларына Биремнәрне җиңеләйтеп, татар телендә нәтиҗәле белем бирүне тәэмин итү.</h2>
+                </div>
+                <div class="question-container" id="question-container-2">
+                    <div class="question-container-header" onclick="showQuestion(2)">
+                        <h2>Укытучылар өчен безнең платформа нинди мөмкинлекләр бирә?</h2>
+                        <div class="question-container-header-arrow">
+                            <div class="question-container-header-arrow-line-1"></div>
+                            <div class="question-container-header-arrow-line-2"></div>
+                        </div>
+                    </div>
+                    <h2 class="question-container-text">Безнең платформа укытучыларга интерактив дәресләр булдыру, эшне контрольдә тоту һәм материаллар алмашу өчен кораллар бирә.</h2>
+                </div>
+                <div class="question-container" id="question-container-3">
+                    <div class="question-container-header" onclick="showQuestion(3)">
+                        <h2>Биш + мәктәп укучылары өчен нинди ресурслар һәм материаллар бар?</h2>
+                        <div class="question-container-header-arrow">
+                            <div class="question-container-header-arrow-line-1"></div>
+                            <div class="question-container-header-arrow-line-2"></div>
+                        </div>
+                    </div>
+                    <h2 class="question-container-text">Мәктәп укучылары өчен уку материаллары, тестлар, видео дәресләр һәм укуны җиңеләйтер өчен татар телендә биремнәр бар.</h2>
+                </div>
+                <div class="question-container" id="question-container-4">
+                    <div class="question-container-header" onclick="showQuestion(4)">
+                        <h2>Нинди яшь төркеме безнең максатчан аудитория?</h2>
+                        <div class="question-container-header-arrow">
+                            <div class="question-container-header-arrow-line-1"></div>
+                            <div class="question-container-header-arrow-line-2"></div>
+                        </div>
+                    </div>
+                    <h2 class="question-container-text">Безнең максатчан аудиториябез-башлангыч мәктәптән башлап урта мәктәпкә кадәр барлык яшь төркемнәрендәге укучылар.</h2>
+                </div>
+                <div class="question-container" id="question-container-5">
+                    <div class="question-container-header" onclick="showQuestion(5)">
+                        <h2>Безнең платформаның нинди үзенчәлекләре аны татар телендә укыту өчен уникаль итә?</h2>
+                        <div class="question-container-header-arrow">
+                            <div class="question-container-header-arrow-line-1"></div>
+                            <div class="question-container-header-arrow-line-2"></div>
+                        </div>
+                    </div>
+                    <h2 class="question-container-text">Безнең платформаның үзенчәлеге-аның татар телендә белгечлеге һәм бу телдә сыйфатлы белем бирү ресурслары бирү.</h2>
+                </div>
+                <div class="question-container" id="question-container-6">
+                    <div class="question-container-header" onclick="showQuestion(6)">
+                        <h2>Платформада эффектив өйрәнүне тәэмин итү өчен без нинди технологияләр кулланабыз?</h2>
+                        <div class="question-container-header-arrow">
+                            <div class="question-container-header-arrow-line-1"></div>
+                            <div class="question-container-header-arrow-line-2"></div>
+                        </div>
+                    </div>
+                    <h2 class="question-container-text">Без интерактив дәресләр, тренингны персональләштерү өчен ясалма интеллект, эшне күзәтү өчен аналитика кебек заманча технологияләр кулланабыз.</h2>
+                </div>
+                <div class="question-container" id="question-container-7">
+                    <div class="question-container-header" onclick="showQuestion(7)">
+                        <h2>Укытучылар һәм укучылар безнең платформага ничек керә алалар?</h2>
+                        <div class="question-container-header-arrow">
+                            <div class="question-container-header-arrow-line-1"></div>
+                            <div class="question-container-header-arrow-line-2"></div>
+                        </div>
+                    </div>
+                    <h2 class="question-container-text">Укытучылар һәм укучылар безнең Биш+ платформасында теркәлергә мөмкин, шуннан соң аларга татар телендә белем бирү ресурсларының тулы җыелмасы биреләчәк.</h2>
+                </div>
+            </div>
+            <img src="static/images/questions.png" alt="questions" class="questions-image">
+        </div>
+    </main>
+    <footer>
+        <h2>help@bishplus.ru</h2>
+        <div class="social-media-links">
+            <a href="#"><img src="static/images/vk-logo.png" alt="vk"></a>
+            <a href="#"><img src="static/images/tg-logo.png" alt="telegram"></a>
+            <a href="#"><img src="static/images/insta-logo.png" alt="instagram"></a>
+        </div>
+        <img src="static/images/logo.svg" alt="bish+" class="footer-logo">
+    </footer>
+    <script src="static/scripts/script.js"></script>
+</body>
+</html>

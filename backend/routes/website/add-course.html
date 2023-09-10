@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tat">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/styles/common.css" rel="stylesheet" />
+    <link href="static/styles/add-course.css" rel="stylesheet" />
+    <title>Курс булдырырга</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="static/images/logo-2.svg" alt="logo" width="150rem">
+    </div>
+    <nav>
+        <ul class="nav-links-container">
+            <li><a href="/" class="nav-link" id="nav-link-1">Дәресләр</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-2">Өстәү</a></li>
+            <li><a href="./webinar" class="nav-link" id="nav-link-3">Вебинар</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-4">Биремнәр</a></li>
+            <li>
+                <a  href="./student-profile">
+                    <button class="bish-plus-plus">Профиль</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="add-course">
+        <div class="add-course-info">
+            <h1>Дәресләр әзерләү</h1>
+            <div class="course-info-input">
+                <h2>Курс исеме</h2>
+                <input type="text">
+                <h2>Курс рәсеме</h2>
+                <label for="add-course-picture" class="add-course-picture" id="upload-course-picture-label">
+                    <img src="static/images/upload-course-picture.svg" alt="Upload picture" id="upload-course-picture">
+                    <h2>Файлны күчерегез яки сайлар өчен монда басыгыз</h2>
+                    <input type="file" id="add-course-picture" accept="image/*">
+                </label>
+            </div>
+            <a href="create-course" class="continue-link">
+                <button class="continue">
+                    Дәвам
+                    <span class="continue-arrow">
+                    <span class="first-arrow-stick"></span>
+                    <span class="second-arrow-stick"></span>
+                </span>
+                </button>
+            </a>
+        </div>
+        <img src="static/images/add-course.png" alt="Add course">
+    </div>
+</main>
+<footer>
+    <h2>help@bishplus.ru</h2>
+    <div class="social-media-links">
+        <a href="#"><img src="static/images/vk-logo-2.svg" alt="vk"></a>
+        <a href="#"><img src="static/images/tg-logo-2.svg" alt="telegram"></a>
+        <a href="#"><img src="static/images/insta-logo-2.svg" alt="instagram"></a>
+    </div>
+    <img src="static/images/logo-2.svg" alt="bish+" class="footer-logo">
+</footer>
+<script src="static/scripts/add-course.js"></script>
+</body>
+</html>

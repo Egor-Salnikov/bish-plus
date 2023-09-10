@@ -1,0 +1,396 @@
+#nav-link-3 {
+    font-weight: 700;
+}
+#nav-link-3:after {
+    position: absolute;
+    content:"";
+    width: 4rem;
+    border-bottom: 2px solid #F49A11;
+    transform: translate(-4rem, 3rem);
+    transition: all 0.5s;
+}
+#nav-link-3:hover:after {
+    width: 6rem;
+    transform: translate(-6rem, 3rem);
+}
+.calendar {
+    position: relative;
+    /*max-width: 800px; !*change as per your design need *!*/
+    min-width: 650px;
+    background: var(--back-primary-color);
+    color: var(--primary-color);
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+    border-radius: 30px;
+    border: 1px solid var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 50rem;
+    align-self: center;
+    margin-top: 8rem;
+}
+.calendar-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: var(--secondary-color);
+    color: white;
+    width: 40%;
+    padding: 0 1rem 1rem 2rem;
+}
+.calendar-today {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    height: 40%;
+    align-content: end;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+.calendar-today-date {
+    font-size: 10rem;
+    font-weight: 900;
+}
+.calendar-today-weekdate {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.chosen-date-courses {
+    height: 50%;
+}
+.calendar-inner {
+    padding: 3rem;
+    width: 60%;
+}
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--tertiary-color);
+}
+
+.calendar .calendar-inner .calendar-body div>a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--tertiary-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.calendar-tire {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-current {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--primary-color);
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: transparent;
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
+    fill: var(--tertiary-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--gray-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+    border: 1px solid transparent;
+    pointer-events: none;
+}
+.number-item {
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+.chosen-date-courses {
+    width: 95%;
+    align-self: center;
+}
+.chosen-course-container {
+    border-radius: 15px;
+    background: var(--back-primary-color);
+    padding: 1.5rem 2rem 1rem 2rem;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+}
+.chosen-course-date {
+    display: flex;
+    justify-content: space-between;
+}
+.chosen-course-separate-line {
+    width: 4rem;
+    height: 0;
+    border: 1px solid #F49A11;
+    margin-top: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+.chosen-course-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.chosen-course-info {
+    height: fit-content;
+    align-self: center;
+    text-align: left;
+}
+.chosen-course-info h2 {
+    font-size: 1.3rem;
+}
+.chosen-course-info h3 {
+    font-size: 1.1rem;
+}
+.chosen-course-data img {
+    width: 4.5rem;
+}
+.common-webinar-info {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 10rem;
+    align-self: center;
+}
+.common-webinar-info img {
+    height: 45rem;
+}
+.common-webinar-text {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-content: space-between;*/
+    /*justify-content: space-around;*/
+    padding-left: 2rem;
+    height: 100%;
+}
+.common-webinar-text h1 {
+    font-size: 4rem;
+    margin-top: 7rem;
+}
+.common-webinar-separate-line {
+    width: 8rem;
+    height: 0;
+    border: 1px solid var(--tertiary-color);
+    margin: 1rem 0 2rem 0;
+}
+.common-webinar-text h3 {
+    font-size: 2.3rem;
+}
+.common-webinar-text button {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--back-primary-color);
+    background: var(--secondary-color);
+    border-radius: 25px;
+    border: 2px solid var(--tertiary-color);
+    padding: 1.5rem 3rem;
+    width: 20rem;
+    margin-top: 4rem;
+ }
+.past-webinars h1 {
+    font-size: 3rem;
+}
+.past-webinars-container {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.webinar-container {
+    display: flex;
+    width: 65rem;
+    height: fit-content;
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color);
+    margin-top: 4rem;
+    overflow: hidden;
+}
+.webinar-container img {
+    width: 55%;
+}
+.webinar-info {
+    width: 45%;
+    padding: 2rem 1.5rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.webinar-info h2 {
+    font-size: 1.8rem;
+}
+.webinar-separate-line {
+    width: 5rem;
+    height: 0;
+    border: 1px solid #F49A11;
+    margin: 0.5rem 0 1rem 0;
+}
+.webinar-info h3 {
+    /*font-size: 1.2rem;*/
+}
+.buttons-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+.webinar-watch {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--back-primary-color);
+    background: #F49A11;
+    border-radius: 25px;
+    padding: 1.5rem 3rem;
+    width: 15rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.webinar-watch img {
+    width: 1.4rem;
+    margin-right: 1rem;
+}
+.favorite-button {
+    border-radius: 100px;
+    background: #FFF3DB;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    margin-top: auto;
+}
+.favorite-button img {
+    align-self: center;
+    width: 50%;
+}
+.past-webinar-pages {
+    margin: 4rem auto;
+    width: 40rem;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+.past-webinar-pages button {
+    color: #A7A7A7;
+    width: 4rem;
+    height: 4rem;
+}
+.past-webinar-pages button.active {
+    color: var(--white-color);
+    background: var(--tertiary-color);
+    border-radius: 10px;
+    width: 4rem;
+}
+.left-arrow {
+    height: 0;
+    width: 0.8rem;
+    background: #A7A7A7;
+    border: 2px solid #A7A7A7;
+    border-radius: 100px;
+    transform: rotate(-50deg);
+}
+.right-arrow {
+    height: 0;
+    margin-top: 0.2rem;
+    width: 0.8rem;
+    background: #A7A7A7;
+    border: 2px solid #A7A7A7;
+    border-radius: 100px;
+    transform: rotate(50deg);
+}
+.next {
+    transform: rotate(180deg);
+}
+.future-webinars h1 {
+    font-size: 3rem;
+}
+.future-webinars-container {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

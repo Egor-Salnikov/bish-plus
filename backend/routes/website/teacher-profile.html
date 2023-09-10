@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tat">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/styles/common.css" rel="stylesheet" />
+    <link href="static/styles/teacher-profile.css" rel="stylesheet" />
+    <title>Профиль</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="static/images/logo-2.svg" alt="logo" width="150rem">
+    </div>
+    <nav>
+        <ul class="nav-links-container">
+            <li><a href="/" class="nav-link" id="nav-link-1">Дәресләр</a></li>
+            <li><a href="./add-course" class="nav-link" id="nav-link-2">Өстәү</a></li>
+            <li><a href="./webinar" class="nav-link" id="nav-link-3">Вебинар</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-4">Биремнәр</a></li>
+            <li>
+                <a href="./student-profile">
+                    <button class="bish-plus-plus">Профиль</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="profile-info">
+        <div class="profile-picture">
+            <img src="static/images/teacher-avatar.png" alt="Profile Picture">
+            <h2>Евгений Зуев</h2>
+            <h3>много лет</h3>
+        </div>
+        <div class="profile-table">
+            <div class="school-info profile-table-row">
+                <div class="row-info">
+                    <h2>Мәктәп</h2>
+                </div>
+                <div class="row-data">
+                    <h3>Иннополис</h3>
+                </div>
+            </div>
+            <div class="city-info profile-table-row">
+                <div class="row-info">
+                    <h2>Шәһәр</h2>
+                </div>
+                <div class="row-data">
+                    <h3>Иннополис</h3>
+                </div>
+            </div>
+            <div class="grades-info profile-table-row">
+                <div class="row-info">
+                    <h2>Фәне</h2>
+                </div>
+                <div class="row-data">
+                    <h3>Информатика, Программирование</h3>
+                </div>
+            </div>
+        </div>
+        <div class="profile-achievements">
+            <h2>Уңышлар</h2>
+            <div class="achievements-container">
+                <div class="achievement">
+                    <div class="achievement-logo">
+                        <img src="static/images/python.png" alt="Achievement">
+                    </div>
+                    Python
+                </div>
+                <div class="achievement">
+                    <div class="achievement-logo">
+                        <img src="static/images/cpp.png" alt="Achievement">
+                    </div>
+                    C++
+                </div>
+                <div class="achievement">
+                    <div class="achievement-logo">
+                        <img src="static/images/python.png" alt="Achievement">
+                    </div>
+                    Python
+                </div>
+                <div class="achievement">
+                    <div class="achievement-logo">
+                        <img src="static/images/cpp.png" alt="Achievement">
+                    </div>
+                    C++
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="profile-container">
+        <div class="exercises">
+            <div class="exercises-header">
+                <label for="choose-class" class="choose-class">
+                    Сыйныф
+                    <select id="choose-class">
+                        <option value="1">IT-лицей, 11А</option>
+                        <option value="2">IT-лицей, 11Б</option>
+                        <option value="3">IT-лицей, 11В</option>
+                        <option value="4">IT-лицей, 11Г</option>
+                        <option value="5">IT-лицей, 11Д</option>
+                    </select>
+                </label>
+                <label for="choose-class" class="choose-class">
+                    Бирем
+                    <select id="choose-exercise">
+                        <option value="1">Дэрес 1: С++ турында</option>
+                        <option value="2">Дэрес 2: С++ турында</option>
+                        <option value="3">Дэрес 3: С++ турында</option>
+                        <option value="4">Дэрес 4: С++ турында</option>
+                        <option value="5">Дэрес 5: С++ турында</option>
+                    </select>
+                </label>
+            </div>
+            <div class="exercises-body">
+                <div class="exercises-body-header">
+                    <img src="./static/images/teacher-exercises.svg" alt="Exercises">
+                    <h2>Җаваплар</h2>
+                </div>
+                <div class="exercises-container">
+                    <img src="./static/images/exercise-photo-1.svg">
+                    <img src="./static/images/exercise-photo-2.svg">
+                    <img src="./static/images/exercise-photo-3.svg">
+                    <img src="./static/images/exercise-photo-4.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <h2>help@bishplus.ru</h2>
+    <div class="social-media-links">
+        <a href="#"><img src="static/images/vk-logo-2.svg" alt="vk"></a>
+        <a href="#"><img src="static/images/tg-logo-2.svg" alt="telegram"></a>
+        <a href="#"><img src="static/images/insta-logo-2.svg" alt="instagram"></a>
+    </div>
+    <img src="static/images/logo-2.svg" alt="bish+" class="footer-logo">
+</footer>
+<script src="static/scripts/teacher-profile.js"></script>
+</body>
+</html>

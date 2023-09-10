@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tat">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/styles/common.css" rel="stylesheet" />
+    <link href="static/styles/login.css" rel="stylesheet" />
+    <title>Керү</title>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="static/images/logo-2.svg" alt="logo" width="150rem">
+    </div>
+    <nav>
+        <ul class="nav-links-container">
+            <li><a href="/" class="nav-link" id="nav-link-1">Дәресләр</a></li>
+            <li><a href="./add-course" class="nav-link" id="nav-link-2">Өстәү</a></li>
+            <li><a href="./webinar" class="nav-link" id="nav-link-3">Вебинар</a></li>
+            <li><a href="#" class="nav-link" id="nav-link-4">Биремнәр</a></li>
+            <li>
+                <a href="./student-profile">
+                    <button class="bish-plus-plus">Профиль</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="static/images/login-edu.svg" alt="Education">
+            <h2>edu.tatar.ru</h2>
+        </div>
+        <form id="login-body">
+            <label for="login-input" class="login-label">
+                <img src="static/images/login.svg" alt="Login">
+                <input type="text" id="login-input" placeholder="логин">
+            </label>
+            <br>
+            <label for="password-input" class="password-label">
+                <img src="static/images/password.svg" alt="Password">
+                <input type="password" id="password-input" placeholder="пароль">
+            </label>
+            <div class="login-info">
+                <a href="#">Бу мәгълүматлар нигә кирәк?</a>
+            </div>
+            <div class="button-block">
+                <button id="login-button">Биремнәр</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <h2>help@bishplus.ru</h2>
+    <div class="social-media-links">
+        <a href="#"><img src="static/images/vk-logo-2.svg" alt="vk"></a>
+        <a href="#"><img src="static/images/tg-logo-2.svg" alt="telegram"></a>
+        <a href="#"><img src="static/images/insta-logo-2.svg" alt="instagram"></a>
+    </div>
+    <img src="static/images/logo-2.svg" alt="bish+" class="footer-logo">
+</footer>
+<script src="static/scripts/login.js"></script>
+</body>
+</html>
